@@ -6,3 +6,4 @@ Commands on the server side:
 - exit: Shuts down the server.
 - say message: Sends a message from the server.
 - logs: Opens the logs.txt file.
+- bans: Opens the banned.txt file.

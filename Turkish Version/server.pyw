@@ -82,6 +82,7 @@ def command(event):
     cmd = entry.get().strip()
     if cmd == "exit": closing()
     elif entry.get().strip() == "logs": os.system(f'notepad logs.txt')
+    elif entry.get().strip() == "bans": os.system(f'notepad banned.txt')
     elif cmd.startswith("ban "):
         ip = cmd[4:].strip()
         with open("banned.txt","a", encoding="utf-8") as file:file.write(f"{ip}\n")
