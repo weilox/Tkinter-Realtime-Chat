@@ -98,7 +98,8 @@ def take():
 
 def send(event):
     message = entry.get().strip()
-    if message:
+    if(message == "exit"): closing()
+    elif message:
         addmsg(f"[{clock}] {username}: {message}")
         server.send(f"[{clock}] {username}: {message}".encode('utf-8'))
         entry.delete(0, tk.END)
